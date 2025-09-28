@@ -27,6 +27,7 @@
     <button type="submit">Обчислити</button>
 </form>
 <p><a href="<%=request.getContextPath()%>/calc.jsp">Калькулятор</a></p>
+<p><a href="<%=request.getContextPath()%>/survey.jsp">Анкета</a></p>
 
 </body>
 </html>

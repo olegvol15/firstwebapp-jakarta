@@ -19,7 +19,6 @@ public class MaxServlet extends HttpServlet {
         resp.setCharacterEncoding("UTF-8");
         resp.setContentType("text/html;charset=UTF-8");
 
-        // Отримуємо параметри
         String n1 = req.getParameter("num1");
         String n2 = req.getParameter("num2");
         String n3 = req.getParameter("num3");
@@ -28,7 +27,6 @@ public class MaxServlet extends HttpServlet {
         double num2 = Double.parseDouble(n2);
         double num3 = Double.parseDouble(n3);
 
-        // Рахуємо максимум
         double max = Math.max(num1, Math.max(num2, num3));
 
         try (PrintWriter out = resp.getWriter()) {
